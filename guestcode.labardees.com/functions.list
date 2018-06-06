@@ -1,0 +1,65 @@
+ * - function/method "get_vouchers" has been removed and has been replaced by "stat_voucher"
+    function __construct($user = '', $password = '', $baseurl = '', $site = '', $version = '') {
+    function __destruct() {
+    public function login() {
+    public function logout() {
+    public function authorize_guest($mac, $minutes, $up = NULL, $down = NULL, $MBytes = NULL, $ap_mac = NULL) {
+    public function unauthorize_guest($mac) {
+    public function reconnect_sta($mac) {
+    public function block_sta($mac) {
+    public function unblock_sta($mac) {
+    public function set_sta_note($user_id, $note = NULL) {
+    public function set_sta_name($user_id, $name = NULL) {
+    public function stat_daily_site($start = NULL, $end = NULL) {
+    public function stat_hourly_site($start = NULL, $end = NULL) {
+    public function stat_hourly_aps($start = NULL, $end = NULL) {
+    public function stat_sessions($start = NULL, $end = NULL, $mac = NULL) {
+    public function stat_sta_sessions_latest($mac, $limit = NULL) {
+    public function stat_auths($start = NULL, $end = NULL) {
+    public function stat_allusers($historyhours = 8760) {
+    public function list_guests($within = 8760) {
+    public function list_clients($client_mac = NULL) {
+    public function stat_client($client_mac) {
+    public function list_usergroups() {
+    public function set_usergroup($user_id, $group_id) {
+    public function list_health() {
+    public function list_dashboard() {
+    public function list_users() {
+    public function list_aps($device_mac = NULL) {
+    public function list_rogueaps($within = '24') {
+    public function list_sites() {
+    public function stat_sites() {
+     * NOTE: immediately after being added, the new site will be available in the output of the "list_sites" function
+    public function add_site($description) {
+    public function list_wlan_groups() {
+    public function stat_sysinfo() {
+    public function list_self() {
+    public function list_networkconf() {
+    public function stat_voucher($create_time = NULL) {
+    public function stat_payment($within = NULL) {
+    public function create_hotspotop($name, $x_password, $note = NULL) {
+    public function list_hotspotop() {
+    public function create_voucher($minutes, $count = 1, $quota = '0', $note = NULL, $up = NULL, $down = NULL, $MBytes = NULL) {
+    public function revoke_voucher($voucher_id) {
+    public function list_portforward_stats() {
+    public function list_portforwarding() {
+    public function list_dynamicdns() {
+    public function list_portconf() {
+    public function list_extension() {
+    public function list_settings() {
+    public function restart_ap($mac) {
+    public function disable_ap($ap_id, $disable) {
+    public function set_locate_ap($mac) {
+    public function unset_locate_ap($mac) {
+    public function site_ledson() {
+    public function site_ledsoff() {
+    public function set_ap_radiosettings($ap_id, $radio, $channel, $ht, $tx_power_mode, $tx_power) {
+    public function set_guestlogin_settings($portal_enabled, $portal_customized, $redirect_enabled, $redirect_url, $x_password, $expire_number, $expire_unit, $site_id) {
+    public function rename_ap($ap_id, $apname) {
+    public function set_wlansettings($wlan_id, $x_passphrase, $name = NULL) {
+    public function list_events() {
+    public function list_wlanconf() {
+    public function list_alarms() {
+     * Internal (private) functions from here
+    private function exec_curl($url, $data = '') {
+    private function get_curl_obj() {
